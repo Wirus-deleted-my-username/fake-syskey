@@ -5,3 +5,6 @@ The syskey looks legit.... But there is one exception. When scammer tries to set
 
 
 Made by Wirus Deleted My Username
+
+
+Download: https://github.com/Wirus-deleted-my-username/fake-syskey/releases
