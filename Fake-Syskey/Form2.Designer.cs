@@ -57,6 +57,7 @@
             this.radioButton1.TabIndex = 0;
             this.radioButton1.Text = "System Generated Password";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -64,7 +65,7 @@
             this.radioButton2.Location = new System.Drawing.Point(45, 159);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(181, 17);
-            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabIndex = 0;
             this.radioButton2.Text = "Store Startup Key on Floppy Disk";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -93,7 +94,7 @@
             this.radioButton3.Location = new System.Drawing.Point(45, 222);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(144, 17);
-            this.radioButton3.TabIndex = 4;
+            this.radioButton3.TabIndex = 0;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Store Startup Key Locally";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -110,7 +111,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(64, 259);
+            this.label4.Location = new System.Drawing.Point(63, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(210, 13);
             this.label4.TabIndex = 6;
@@ -119,7 +120,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(65, 276);
+            this.label5.Location = new System.Drawing.Point(63, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 7;
@@ -131,8 +132,7 @@
             this.radioButton4.Location = new System.Drawing.Point(23, 12);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(108, 17);
-            this.radioButton4.TabIndex = 8;
-            this.radioButton4.TabStop = true;
+            this.radioButton4.TabIndex = 0;
             this.radioButton4.Text = "Password Startup";
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
@@ -182,33 +182,36 @@
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(106, 74);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 20);
-            this.textBox1.TabIndex = 13;
+            this.textBox1.Size = new System.Drawing.Size(254, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.TabStop = false;
             // 
             // textBox2
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(106, 97);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(276, 20);
-            this.textBox2.TabIndex = 14;
+            this.textBox2.Size = new System.Drawing.Size(254, 20);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(128, 304);
+            this.button1.Location = new System.Drawing.Point(112, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 26);
-            this.button1.TabIndex = 15;
+            this.button1.TabIndex = 1;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(210, 304);
+            this.button2.Location = new System.Drawing.Point(201, 304);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 26);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 0;
+            this.button2.TabStop = false;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -217,7 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 348);
+            this.ClientSize = new System.Drawing.Size(375, 348);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);

@@ -12,6 +12,8 @@ namespace Fake_Syskey
 {
     public partial class Form2 : Form
     {
+        private object radioButon1;
+
         public Form2()
         {
             InitializeComponent();
@@ -43,6 +45,23 @@ namespace Fake_Syskey
         {
             Form3 settingsForm = new Form3();
             settingsForm.Show();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label6.Enabled = false;
+            label7.Enabled = false;
+            label8.Enabled = false;
+            label9.Enabled = false;
+            textBox1.Enabled = false;
+            textBox2.Enabled = false;
+            radioButton2.Enabled = true;
+            label1.Enabled = true;
+            label2.Enabled = true;
+            radioButton3.Enabled = true;
+            label3.Enabled = true;
+            label4.Enabled = true;
+            label5.Enabled = true;
         }
     }
 }
